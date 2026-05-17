@@ -1,0 +1,15 @@
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net10.0/3-writeline
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net10.0/3-writeline.deps.json
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net10.0/3-writeline.runtimeconfig.json
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net10.0/3-writeline.dll
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/bin/Debug/net10.0/3-writeline.pdb
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/3-writeline.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/3-writeline.AssemblyInfoInputs.cache
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/3-writeline.AssemblyInfo.cs
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/3-writeline.csproj.CoreCompileInputs.cache
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/3-writeline.sourcelink.json
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/3-writeline.dll
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/refint/3-writeline.dll
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/3-writeline.pdb
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/3-writeline.genruntimeconfig.cache
+/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/3-writeline/obj/Debug/net10.0/ref/3-writeline.dll
