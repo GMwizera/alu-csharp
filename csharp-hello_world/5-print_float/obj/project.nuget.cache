@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "A1ZLfydRnec=",
+  "dgSpecHash": "Rkf7xRBEeoQ=",
   "success": true,
   "projectFilePath": "/Users/mwizera/Desktop/DATA/ALU/SPECIALISATION/TRIMESTER-1/PROGRAMMING-IN-C#/INTRANET/alu-csharp/csharp-hello_world/5-print_float/5-print_float.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/mwizera/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/mwizera/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/mwizera/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

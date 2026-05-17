@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        float number = 3.14159F;
+        float number = float.Parse(Console.ReadLine());
         Console.WriteLine("Float: " + number.ToString("F2"));
     }
 }
