@@ -2,9 +2,9 @@
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        float number = float.Parse(Console.ReadLine()!);
+        float number = float.Parse(args[0]);
         Console.WriteLine("Float: " + number.ToString("F2"));
     }
 }
