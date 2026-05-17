@@ -4,8 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        string str = "Holberton School";
-        Console.WriteLine(str + str + str);
-        Console.WriteLine(str.Substring(0, 9));
+        string str1 = "Holberton";
+        string str2 = "School";
+
+        Console.WriteLine("Welcome to {0} {1}!", str1, str2);
     }
 }
