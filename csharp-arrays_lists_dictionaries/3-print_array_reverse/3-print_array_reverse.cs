@@ -11,8 +11,8 @@ class Array
         // }
         if (array == null || array.Length == 0)
         {
-            // Console.WriteLine("$");
-            return array;
+            Console.WriteLine("");
+            return;
         }
         for (int i = 0; i < array.Length / 2; i++)
         {
