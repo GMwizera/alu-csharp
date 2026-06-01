@@ -2,7 +2,7 @@
 
 class Array
 {
-    public static int[] Reverse(int[] array)
+    public static void Reverse(int[]? array)
     {
         // if (array == null)
         // {
@@ -21,6 +21,6 @@ class Array
             array[array.Length - i - 1] = temp;
         }
         Console.WriteLine(string.Join(" ", array));
-        return array;
+        // return array;
     }
 }
