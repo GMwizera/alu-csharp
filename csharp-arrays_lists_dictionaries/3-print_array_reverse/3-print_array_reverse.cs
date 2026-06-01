@@ -9,7 +9,7 @@ class Array
         //     // Console.WriteLine("$");
         //     return array;
         // }
-        if (array.Length == 0)
+        if (array == null || array.Length == 0)
         {
             // Console.WriteLine("$");
             return array;
