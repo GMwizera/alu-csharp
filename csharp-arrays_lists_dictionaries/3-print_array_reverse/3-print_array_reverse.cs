@@ -20,7 +20,7 @@ class Array
             array[i] = array[array.Length - i - 1];
             array[array.Length - i - 1] = temp;
         }
-        Console.WriteLine(string.Join(" ", array) + "$");
+        Console.WriteLine(string.Join(" ", array));
         return array;
     }
 }
