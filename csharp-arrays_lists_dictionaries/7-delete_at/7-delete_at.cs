@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 class List
@@ -11,6 +11,7 @@ class List
             return myList;
         }
         List<int> newList = new List<int>();
+        myList.Clear();
         for (int i = 0; i < myList.Count; i++)
         {
             if (i != index)
