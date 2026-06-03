@@ -1,10 +1,30 @@
 using System;
 using System.Collections.Generic;
 
-class Dictionary
+class Program
 {
-    public static void AddKeyValue(Dictionary<string, string> myDict, string key, string value)
+    static void Main(string[] args)
     {
-        myDict.Add(key, value);
+        Dictionary<string, string> myDict = new Dictionary<string, string>();
+        string key;
+        string value;
+
+        key = "school";
+        value = "Holberton";
+
+        Dictionary.AddKeyValue(myDict, key, value);
+
+        foreach (KeyValuePair<string, string> entry in myDict)
+            Console.WriteLine("{0}: {1}", entry.Key, entry.Value);
+
+        Console.WriteLine("------------------");
+        
+        key = "city";
+        value = "San Francisco";
+
+        Dictionary.AddKeyValue(myDict, key, value);
+
+        foreach (KeyValuePair<string, string> entry in myDict)
+            Console.WriteLine("{0}: {1}", entry.Key, entry.Value);
     }
 }
