@@ -10,13 +10,14 @@ class List
             Console.WriteLine("Index is out of range");
             return myList;
         }
-        List<int> newList = new List<int>();
+        // List<int> newList = new List<int>();
+        var newList = new List<int>(myList);
         myList.Clear();
-        for (int i = 0; i < myList.Count; i++)
+        for (int i = 0; i < newList.Count; i++)
         {
             if (i != index)
-                newList.Add(myList[i]);
+                myList.Add(newList[i]);
         }
-        return newList;
+        return myList;
     }
 }
