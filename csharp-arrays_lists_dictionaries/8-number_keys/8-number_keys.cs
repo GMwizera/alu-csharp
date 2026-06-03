@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class List
+class Dictionary
 {
     public static int NumberOfKeys(Dictionary<string, string> myDict)
     {
