@@ -16,6 +16,10 @@ This project covers exceptions and exception handling in C#.
 | Task | File | Description |
 |------|------|-------------|
 | 0. Safe list printing | [0-safe_list_print](0-safe_list_print/) | Prints `n` elements of a list, returning the number actually printed, using `try`/`catch`. |
+| 1. Integer division | [1-divide_print](1-divide_print/) | Divides two integers and prints the result in a `finally` block, handling division by zero. |
+| 2. Divide lists | [2-divide_lists](2-divide_lists/) | Divides two lists element by element, handling division by zero and out-of-range indices. |
+| 3. Throw exception | [3-throw_exception](3-throw_exception/) | A method that throws an `Exception`. |
+| 4. Throw exception with message | [4-throw_exception_msg](4-throw_exception_msg/) | A method that throws an `Exception` carrying a custom message. |
 
 ## Requirements
 
