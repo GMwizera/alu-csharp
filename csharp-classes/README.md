@@ -26,6 +26,7 @@ code with XML documentation comments.
 | 2. Health validation | [2-enemy/](2-enemy/) | Add a `Zombie(int value)` constructor that throws `ArgumentException` when `value` is less than 0. |
 | 3. Zombie health | [3-enemy/](3-enemy/) | Make `health` private and add a public `GetHealth()` method that returns it. |
 | 4. Hello, my name is | [4-enemy/](4-enemy/) | Add a private `name` field (default `(No name)`) and a public `Name` property with get/set. |
+| 5. Printing a zombie | [5-enemy/](5-enemy/) | Override `ToString()` to print `Zombie Name: <name> / Total Health: <health>`. |
 
 ## Documentation
 
