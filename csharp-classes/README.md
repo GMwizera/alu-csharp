@@ -23,6 +23,7 @@ code with XML documentation comments.
 |------|------|-------------|
 | 0. Braaainsss | [0-enemy/](0-enemy/) | Create an empty public class `Zombie` inside the `Enemies` namespace. |
 | 1. Healthy competition | [1-enemy/](1-enemy/) | Add a public `health` field and a public constructor that sets `health` to 0. |
+| 2. Health validation | [2-enemy/](2-enemy/) | Add a `Zombie(int value)` constructor that throws `ArgumentException` when `value` is less than 0. |
 
 ## Documentation
 
