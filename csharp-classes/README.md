@@ -25,6 +25,7 @@ code with XML documentation comments.
 | 1. Healthy competition | [1-enemy/](1-enemy/) | Add a public `health` field and a public constructor that sets `health` to 0. |
 | 2. Health validation | [2-enemy/](2-enemy/) | Add a `Zombie(int value)` constructor that throws `ArgumentException` when `value` is less than 0. |
 | 3. Zombie health | [3-enemy/](3-enemy/) | Make `health` private and add a public `GetHealth()` method that returns it. |
+| 4. Hello, my name is | [4-enemy/](4-enemy/) | Add a private `name` field (default `(No name)`) and a public `Name` property with get/set. |
 
 ## Documentation
 
