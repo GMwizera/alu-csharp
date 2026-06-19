@@ -22,6 +22,7 @@ code with XML documentation comments.
 | Task | File | Description |
 |------|------|-------------|
 | 0. Braaainsss | [0-enemy/](0-enemy/) | Create an empty public class `Zombie` inside the `Enemies` namespace. |
+| 1. Healthy competition | [1-enemy/](1-enemy/) | Add a public `health` field and a public constructor that sets `health` to 0. |
 
 ## Documentation
 
