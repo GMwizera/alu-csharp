@@ -13,6 +13,7 @@ containing two projects:
 |------|----------|-----------|-------|-------------|
 | 0 | `0-add` | `MyMath` | `Operations` | Adds two integers. |
 | 2 | `2-max_int` | `MyMath` | `Operations` | Returns the max integer in a list (0 if empty). |
+| 5 | `5-camelcase` | `Text` | `Str` | Counts the words in a camelCase string. |
 
 ## Project layout
 
