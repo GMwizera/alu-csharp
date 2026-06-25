@@ -7,6 +7,9 @@ namespace MyMath.Tests
     /// </summary>
     public class OperationsTests
     {
+        /// <summary>
+        /// Verifies that adding two positive integers returns their sum.
+        /// </summary>
         [Test]
         public void Add_TwoPositiveIntegers_ReturnsSum()
         {
@@ -21,6 +24,9 @@ namespace MyMath.Tests
             Assert.That(result, Is.EqualTo(5));
         }
 
+        /// <summary>
+        /// Verifies that adding two negative integers returns their sum.
+        /// </summary>
         [Test]
         public void Add_TwoNegativeIntegers_ReturnsSum()
         {
@@ -29,6 +35,9 @@ namespace MyMath.Tests
             Assert.That(result, Is.EqualTo(-10));
         }
 
+        /// <summary>
+        /// Verifies that adding a positive and a negative integer returns their sum.
+        /// </summary>
         [Test]
         public void Add_PositiveAndNegativeInteger_ReturnsSum()
         {
@@ -37,6 +46,9 @@ namespace MyMath.Tests
             Assert.That(result, Is.EqualTo(7));
         }
 
+        /// <summary>
+        /// Verifies that adding zero acts as the identity element.
+        /// </summary>
         [Test]
         public void Add_WithZero_ReturnsOtherOperand()
         {
@@ -45,12 +57,21 @@ namespace MyMath.Tests
             Assert.That(Operations.Add(0, 0), Is.EqualTo(0));
         }
 
+        /// <summary>
+        /// Verifies that addition is commutative.
+        /// </summary>
         [Test]
         public void Add_IsCommutative()
         {
             Assert.That(Operations.Add(8, 5), Is.EqualTo(Operations.Add(5, 8)));
         }
 
+        /// <summary>
+        /// Verifies the sum for a range of inputs, including the integer bounds.
+        /// </summary>
+        /// <param name="a">The first integer to add.</param>
+        /// <param name="b">The second integer to add.</param>
+        /// <param name="expected">The expected sum.</param>
         [TestCase(1, 1, 2)]
         [TestCase(-1, 1, 0)]
         [TestCase(100, 250, 350)]
