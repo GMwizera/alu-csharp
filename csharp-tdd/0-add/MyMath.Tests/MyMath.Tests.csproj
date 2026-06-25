@@ -4,6 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <NuGetAudit>false</NuGetAudit>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
