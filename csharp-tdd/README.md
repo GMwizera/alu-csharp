@@ -12,6 +12,7 @@ containing two projects:
 | Task | Solution | Namespace | Class | Description |
 |------|----------|-----------|-------|-------------|
 | 0 | `0-add` | `MyMath` | `Operations` | Adds two integers. |
+| 2 | `2-max_int` | `MyMath` | `Operations` | Returns the max integer in a list (0 if empty). |
 
 ## Project layout
 
