@@ -8,9 +8,10 @@ namespace Text.Tests
     public class StrTests
     {
         /// <summary>
-        /// Verifies that an empty string contains zero words.
+        /// Empty string: contains zero words.
         /// </summary>
         [Test]
+        [Description("Empty string")]
         public void CamelCase_EmptyString_ReturnsZero()
         {
             // Arrange
@@ -24,63 +25,70 @@ namespace Text.Tests
         }
 
         /// <summary>
-        /// Verifies that a null string contains zero words (do not trust the caller).
+        /// Null string: treated as zero words (do not trust the caller).
         /// </summary>
         [Test]
+        [Description("Null string")]
         public void CamelCase_Null_ReturnsZero()
         {
             Assert.That(Str.CamelCase(null), Is.EqualTo(0));
         }
 
         /// <summary>
-        /// Verifies that a single lowercase word counts as one word.
+        /// One word: a single lowercase word counts as one.
         /// </summary>
         [Test]
-        public void CamelCase_SingleLowercaseWord_ReturnsOne()
+        [Description("One word")]
+        public void CamelCase_OneWord_ReturnsOne()
         {
             Assert.That(Str.CamelCase("hello"), Is.EqualTo(1));
         }
 
         /// <summary>
-        /// Verifies that a single character counts as one word.
+        /// One word: a single character counts as one.
         /// </summary>
         [Test]
+        [Description("One word - single character")]
         public void CamelCase_SingleCharacter_ReturnsOne()
         {
             Assert.That(Str.CamelCase("a"), Is.EqualTo(1));
         }
 
         /// <summary>
-        /// Verifies that two camelCase words are counted.
+        /// Two words: one uppercase boundary yields two words.
         /// </summary>
         [Test]
+        [Description("Two words")]
         public void CamelCase_TwoWords_ReturnsTwo()
         {
             Assert.That(Str.CamelCase("helloWorld"), Is.EqualTo(2));
         }
 
         /// <summary>
-        /// Verifies a longer camelCase string with several words.
+        /// Multiple words: several uppercase boundaries are all counted.
         /// </summary>
         [Test]
-        public void CamelCase_ManyWords_ReturnsWordCount()
+        [Description("Multiple words")]
+        public void CamelCase_MultipleWords_ReturnsWordCount()
         {
             Assert.That(Str.CamelCase("thisIsCamelCase"), Is.EqualTo(4));
         }
 
         /// <summary>
-        /// Verifies that each additional uppercase letter adds one word.
+        /// Multiple words: every uppercase letter starts a new word.
         /// </summary>
         [Test]
-        public void CamelCase_EveryUppercaseStartsNewWord_ReturnsWordCount()
+        [Description("Multiple words - five")]
+        public void CamelCase_FiveWords_ReturnsFive()
         {
             Assert.That(Str.CamelCase("oneTwoThreeFourFive"), Is.EqualTo(5));
         }
 
         /// <summary>
-        /// Verifies that consecutive uppercase letters each count as a new word.
+        /// Multiple words: consecutive uppercase letters each start a word.
         /// </summary>
         [Test]
+        [Description("Multiple words - consecutive uppercase")]
         public void CamelCase_ConsecutiveUppercase_CountsEach()
         {
             // a, A, B, C -> "a", "A", "B", "C" = 4 words
@@ -88,9 +96,10 @@ namespace Text.Tests
         }
 
         /// <summary>
-        /// Verifies that digits and lowercase letters within a word are not counted.
+        /// Multiple words: digits inside words do not add to the count.
         /// </summary>
         [Test]
+        [Description("Multiple words - with digits")]
         public void CamelCase_WithDigitsInWords_CountsOnlyUppercaseBoundaries()
         {
             // user1Name2 -> "user1", "Name2" = 2 words
