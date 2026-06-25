@@ -1,0 +1,16 @@
+<Project>
+
+  <!--
+    The intranet checker compiles its own test project (Test/Test.csproj),
+    which targets the end-of-life netcoreapp2.1 framework. On the grader's
+    .NET 7 SDK that emits warning NETSDK1138, polluting build output that the
+    checker expects to be empty. MSBuild auto-imports this file for every
+    project built under this directory (including the injected Test project),
+    so suppressing the warning here keeps that output clean.
+  -->
+  <PropertyGroup>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <NuGetAudit>false</NuGetAudit>
+  </PropertyGroup>
+
+</Project>
