@@ -12,6 +12,8 @@ that exercises the class library.
 | 1 | `1-divide`  | `MyMath.Matrix.Divide(int[,] matrix, int num)` — divide every element of a matrix by `num`. |
 | 2 | `2-max_int` | `MyMath.Operations.Max(List<int> nums)` — return the largest integer in the list (0 if empty). |
 | 3 | `3-palindrome` | `Text.Str.IsPalindrome(string s)` — case-insensitive palindrome check, ignoring spaces and punctuation. |
+| 4 | `4-unique`     | `Text.Str.UniqueChar(string s)` — return index of the first non-repeating character, `-1` if none. |
+| 5 | `5-camelcase`  | `Text.Str.CamelCase(string s)` — count the words in a camelCase string. |
 
 ## Running tests
 
