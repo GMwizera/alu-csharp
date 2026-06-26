@@ -10,6 +10,7 @@ that exercises the class library.
 |---|-------------|-------------------------------------------------|
 | 0 | `0-add`     | `MyMath.Operations.Add(int a, int b)` — sum two integers. |
 | 1 | `1-divide`  | `MyMath.Matrix.Divide(int[,] matrix, int num)` — divide every element of a matrix by `num`. |
+| 2 | `2-max_int` | `MyMath.Operations.Max(List<int> nums)` — return the largest integer in the list (0 if empty). |
 
 ## Running tests
 
