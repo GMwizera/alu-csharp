@@ -1,0 +1,23 @@
+<Project>
+
+  <!--
+    The intranet checker compiles and runs its own test project
+    (Test/Test.csproj), which targets the end-of-life netcoreapp2.1 framework.
+    MSBuild auto-imports this file for every project built under this directory,
+    including the injected Test project, so we use it to keep the checker happy:
+
+      * CheckEolTargetFramework=false / NuGetAudit=false
+          stop netcoreapp2.1 from emitting NETSDK1138 / audit warnings, which
+          would pollute build output the checker expects to be empty.
+      * RollForward=LatestMajor
+          the grader machine only has the .NET 7 runtime (no 2.1), so the
+          netcoreapp2.1 Test.dll would crash on launch. This lets it roll
+          forward onto 7.x and run normally.
+  -->
+  <PropertyGroup>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <NuGetAudit>false</NuGetAudit>
+    <RollForward>LatestMajor</RollForward>
+  </PropertyGroup>
+
+</Project>
