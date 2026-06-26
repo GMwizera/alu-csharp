@@ -1,3 +1,4 @@
+using System.IO;
 using NUnit.Framework;
 
 namespace MyMath.Tests
@@ -7,6 +8,21 @@ namespace MyMath.Tests
     /// </summary>
     public class MatrixTests
     {
+        private System.IO.TextWriter _originalConsoleOut;
+
+        /// <summary>
+        /// Snapshots <see cref="System.Console.Out"/> so that <see cref="EmitFailureMarker"/>
+        /// can restore it before writing the legacy failure marker. Tests that redirect
+        /// <see cref="System.Console.Out"/> (e.g. via <see cref="System.Console.SetOut"/>)
+        /// dispose their writer inside the test body; without restoring here, the
+        /// marker would be written to a disposed writer and never reach stdout.
+        /// </summary>
+        [SetUp]
+        public void Setup()
+        {
+            _originalConsoleOut = System.Console.Out;
+        }
+
         /// <summary>
         /// Emits the legacy "Test Run Failed." marker whenever a test fails, so
         /// the intranet "Test present" checks (which mutate the implementation
@@ -17,6 +33,8 @@ namespace MyMath.Tests
         [TearDown]
         public void EmitFailureMarker()
         {
+            System.Console.SetOut(_originalConsoleOut);
+
             if (TestContext.CurrentContext.Result.Outcome.Status
                 == NUnit.Framework.Interfaces.TestStatus.Failed)
             {
@@ -106,7 +124,7 @@ namespace MyMath.Tests
         {
             int[,] matrix = { { 1, 2 }, { 3, 4 } };
 
-            using (var writer = new System.IO.StringWriter())
+            using (var writer = new StringWriter())
             {
                 System.Console.SetOut(writer);
 
@@ -135,7 +153,7 @@ namespace MyMath.Tests
         [Test]
         public void Divide_NullMatrixAndZeroDivisor_ReturnsNullWithoutPrint()
         {
-            using (var writer = new System.IO.StringWriter())
+            using (var writer = new StringWriter())
             {
                 System.Console.SetOut(writer);
 
