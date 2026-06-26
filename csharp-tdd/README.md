@@ -1,42 +1,19 @@
-# C# - Test-Driven Development
+# csharp-tdd
 
-This project introduces unit testing and the Test-Driven Development (TDD)
-approach in C# using NUnit and .NET Core. Each task is a single solution
-containing two projects:
-
-- A **class library** that solves the task.
-- A **test library** that tests the class library.
+Test-Driven Development exercises in C#. Each task is a solution containing
+two projects: a class library that solves the task, and an NUnit test library
+that exercises the class library.
 
 ## Tasks
 
-| Task | Solution | Namespace | Class | Description |
-|------|----------|-----------|-------|-------------|
-| 0 | `0-add` | `MyMath` | `Operations` | Adds two integers. |
-| 1 | `1-divide` | `MyMath` | `Matrix` | Divides every element of a matrix by an integer. |
-| 2 | `2-max_int` | `MyMath` | `Operations` | Returns the max integer in a list (0 if empty). |
-| 5 | `5-camelcase` | `Text` | `Str` | Counts the words in a camelCase string. |
+| # | Folder     | Description                                     |
+|---|------------|-------------------------------------------------|
+| 0 | `0-add`    | `MyMath.Operations.Add(int a, int b)` — sum two integers. |
 
-## Project layout
+## Running tests
+
+From inside a task folder (e.g. `0-add`):
 
 ```
-0-add/
-    0-add.sln
-    MyMath/
-        MyMath.cs
-        MyMath.csproj
-    MyMath.Tests/
-        MyMath.Tests.cs
-        MyMath.Tests.csproj
-```
-
-## Running the tests
-
-From a task's root directory:
-
-```bash
 dotnet test
 ```
-
-## Author
-
-Gisele Mwizera

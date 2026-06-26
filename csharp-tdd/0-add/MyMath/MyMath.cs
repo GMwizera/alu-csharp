@@ -1,3 +1,5 @@
+using System;
+
 namespace MyMath
 {
     /// <summary>
@@ -8,8 +10,8 @@ namespace MyMath
         /// <summary>
         /// Adds two integers together.
         /// </summary>
-        /// <param name="a">The first integer to add.</param>
-        /// <param name="b">The second integer to add.</param>
+        /// <param name="a">The first integer.</param>
+        /// <param name="b">The second integer.</param>
         /// <returns>The sum of <paramref name="a"/> and <paramref name="b"/>.</returns>
         public static int Add(int a, int b)
         {
