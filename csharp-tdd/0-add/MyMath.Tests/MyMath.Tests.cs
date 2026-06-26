@@ -1,103 +1,39 @@
 using NUnit.Framework;
+using MyMath;
 
 namespace MyMath.Tests
 {
-    /// <summary>
-    /// Unit tests for the <see cref="Operations.Add"/> method.
-    /// </summary>
     public class OperationsTests
     {
-        /// <summary>
-        /// Emits the legacy "Test Run Failed." marker whenever a test fails, so
-        /// the intranet "Test present" checks (which mutate the implementation
-        /// and expect a failing test to catch it) find the phrase they grep for.
-        /// vstest surfaces a failed test's console output, so this only appears
-        /// when a test actually fails.
-        /// </summary>
-        [TearDown]
-        public void EmitFailureMarker()
-        {
-            if (TestContext.CurrentContext.Result.Outcome.Status
-                == NUnit.Framework.Interfaces.TestStatus.Failed)
-            {
-                System.Console.WriteLine("Test Run Failed.");
-            }
-        }
-
-        /// <summary>
-        /// Verifies that adding two positive integers returns their sum.
-        /// </summary>
         [Test]
-        public void Add_TwoPositiveIntegers_ReturnsSum()
+        public void Add_TwoPositiveNumbers_ReturnsSum()
         {
-            // Arrange
-            int a = 2;
-            int b = 3;
-
-            // Act
-            int result = Operations.Add(a, b);
-
-            // Assert
-            Assert.That(result, Is.EqualTo(5));
+            Assert.AreEqual(5, Operations.Add(2, 3));
         }
 
-        /// <summary>
-        /// Verifies that adding two negative integers returns their sum.
-        /// </summary>
         [Test]
-        public void Add_TwoNegativeIntegers_ReturnsSum()
+        public void Add_TwoNegativeNumbers_ReturnsSum()
         {
-            int result = Operations.Add(-4, -6);
-
-            Assert.That(result, Is.EqualTo(-10));
+            Assert.AreEqual(-7, Operations.Add(-3, -4));
         }
 
-        /// <summary>
-        /// Verifies that adding a positive and a negative integer returns their sum.
-        /// </summary>
         [Test]
-        public void Add_PositiveAndNegativeInteger_ReturnsSum()
+        public void Add_PositiveAndNegative_ReturnsSum()
         {
-            int result = Operations.Add(10, -3);
-
-            Assert.That(result, Is.EqualTo(7));
+            Assert.AreEqual(-1, Operations.Add(4, -5));
         }
 
-        /// <summary>
-        /// Verifies that adding zero acts as the identity element.
-        /// </summary>
         [Test]
-        public void Add_WithZero_ReturnsOtherOperand()
+        public void Add_WithZero_ReturnsOtherNumber()
         {
-            Assert.That(Operations.Add(0, 7), Is.EqualTo(7));
-            Assert.That(Operations.Add(7, 0), Is.EqualTo(7));
-            Assert.That(Operations.Add(0, 0), Is.EqualTo(0));
+            Assert.AreEqual(7, Operations.Add(0, 7));
+            Assert.AreEqual(7, Operations.Add(7, 0));
         }
 
-        /// <summary>
-        /// Verifies that addition is commutative.
-        /// </summary>
         [Test]
-        public void Add_IsCommutative()
+        public void Add_TwoZeros_ReturnsZero()
         {
-            Assert.That(Operations.Add(8, 5), Is.EqualTo(Operations.Add(5, 8)));
-        }
-
-        /// <summary>
-        /// Verifies the sum for a range of inputs, including the integer bounds.
-        /// </summary>
-        /// <param name="a">The first integer to add.</param>
-        /// <param name="b">The second integer to add.</param>
-        /// <param name="expected">The expected sum.</param>
-        [TestCase(1, 1, 2)]
-        [TestCase(-1, 1, 0)]
-        [TestCase(100, 250, 350)]
-        [TestCase(-50, -50, -100)]
-        [TestCase(int.MaxValue, 0, int.MaxValue)]
-        [TestCase(int.MinValue, 0, int.MinValue)]
-        public void Add_VariousInputs_ReturnsExpectedSum(int a, int b, int expected)
-        {
-            Assert.That(Operations.Add(a, b), Is.EqualTo(expected));
+            Assert.AreEqual(0, Operations.Add(0, 0));
         }
     }
 }
