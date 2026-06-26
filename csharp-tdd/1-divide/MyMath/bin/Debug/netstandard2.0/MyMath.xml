@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyMath</name>
+    </assembly>
+    <members>
+        <member name="T:MyMath.Matrix">
+            <summary>
+            Provides matrix operations.
+            </summary>
+        </member>
+        <member name="M:MyMath.Matrix.Divide(System.Int32[0:,0:],System.Int32)">
+            <summary>
+            Divides every element of a matrix by a given integer.
+            </summary>
+            <param name="matrix">The matrix whose elements will be divided.</param>
+            <param name="num">The divisor.</param>
+            <returns>
+            A new matrix containing the divided elements,
+            <c>null</c> if <paramref name="matrix"/> is <c>null</c>,
+            or <c>null</c> if <paramref name="num"/> is <c>0</c>.
+            </returns>
+        </member>
+    </members>
+</doc>
