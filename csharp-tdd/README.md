@@ -6,9 +6,10 @@ that exercises the class library.
 
 ## Tasks
 
-| # | Folder     | Description                                     |
-|---|------------|-------------------------------------------------|
-| 0 | `0-add`    | `MyMath.Operations.Add(int a, int b)` — sum two integers. |
+| # | Folder      | Description                                     |
+|---|-------------|-------------------------------------------------|
+| 0 | `0-add`     | `MyMath.Operations.Add(int a, int b)` — sum two integers. |
+| 1 | `1-divide`  | `MyMath.Matrix.Divide(int[,] matrix, int num)` — divide every element of a matrix by `num`. |
 
 ## Running tests
 
