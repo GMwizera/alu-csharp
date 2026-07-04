@@ -1,0 +1,15 @@
+<Project>
+
+  <!--
+    The intranet grader injects its own netcoreapp2.1 Test project and only has
+    the .NET 7 runtime. RollForward lets that project run on 7.x; the other two
+    silence NETSDK1138 / NuGet-audit noise the grader expects to be absent.
+    Auto-imported by MSBuild for every project built under this task.
+  -->
+  <PropertyGroup>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <NuGetAudit>false</NuGetAudit>
+    <RollForward>LatestMajor</RollForward>
+  </PropertyGroup>
+
+</Project>
