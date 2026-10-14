@@ -1,1 +1,10 @@
-{}
+{
+  "csharp-dev-tools.solutionViewer.selectedWorkspaceSolutions": [
+    "csharp-tdd/0-add/0-add.sln",
+    "csharp-tdd/1-divide/1-divide.sln",
+    "csharp-tdd/2-max_int/2-max_int.sln",
+    "csharp-tdd/3-palindrome/3-palindrome.sln",
+    "csharp-tdd/4-unique/4-unique.sln",
+    "csharp-tdd/5-camelcase/5-camelcase.sln"
+  ]
+}
