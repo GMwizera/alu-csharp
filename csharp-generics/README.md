@@ -13,7 +13,7 @@
 
 ## Environment
 
-- Compiled on Ubuntu with `dotnet`
+- All files will be compiled on Ubuntu 14.04 LTS using `dotnet` (`Windows .Net 7.0 SDK`)
 - Each task has its own folder and `.csproj` file
 
 ## Author
