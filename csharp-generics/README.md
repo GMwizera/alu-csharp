@@ -7,6 +7,7 @@
 | 2. Dequeue | [2-dequeue/queue.cs](2-dequeue/queue.cs) | Add `Dequeue()`, which removes the first node and returns its value, or prints `Queue is empty` and returns `default(T)`. |
 | 3. Peek | [3-peek/queue.cs](3-peek/queue.cs) | Add `Peek()`, which returns the first node's value without removing it, or prints `Queue is empty` and returns `default(T)`. |
 | 4. Print | [4-print/queue.cs](4-print/queue.cs) | Add `Print()`, which prints each value from head to tail, or `Queue is empty`. |
+| 5. Concatenate | [5-concatenate/queue.cs](5-concatenate/queue.cs) | Add `Concatenate()`, which joins a queue of strings (with spaces) or chars into one string, and returns `null` for an empty queue or any other type. |
 
 ## Documentation
 
