@@ -6,6 +6,7 @@
 | 1. Enqueue | [1-enqueue/queue.cs](1-enqueue/queue.cs) | Add a nested `Node` class, `head`/`tail`/`count`, an `Enqueue()` method that adds a node to the end, and `Count()`. |
 | 2. Dequeue | [2-dequeue/queue.cs](2-dequeue/queue.cs) | Add `Dequeue()`, which removes the first node and returns its value, or prints `Queue is empty` and returns `default(T)`. |
 | 3. Peek | [3-peek/queue.cs](3-peek/queue.cs) | Add `Peek()`, which returns the first node's value without removing it, or prints `Queue is empty` and returns `default(T)`. |
+| 4. Print | [4-print/queue.cs](4-print/queue.cs) | Add `Print()`, which prints each value from head to tail, or `Queue is empty`. |
 
 ## Documentation
 
